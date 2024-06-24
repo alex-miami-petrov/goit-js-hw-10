@@ -35,40 +35,24 @@ document.querySelector('[data-start]').addEventListener('click', function () {
   this.disabled = true;
 
   const selectedDate = flatpickr.parseDate(
-      document.getElementById('datetime-picker').value,
-      
-      if (selectedDate < new Date()) {
-    iziToast.error({
-      title: 'Error',
-      message: 'Please choose a date in the future',
-      position: 'topRight'
-    });
-    
-          document.getElementById('datetime-picker').disabled = false;
-          document.querySelector('[data-start]').disabled = false;
-    // this.disabled = false;
-    return;
-  }
-    // 'Y-m-d H:i'
+    document.getElementById('datetime-picker').value,
+    'Y-m-d H:i'
   );
 
-  countdown = setInterval(() => {
+  const countdown = setInterval(() => {
     const now = new Date().getTime();
     const distance = selectedDate.getTime() - now;
 
     if (distance <= 0) {
-        clearInterval(countdown);
-        
-        iziToast.success({
+      clearInterval(countdown);
+      updateTimerUI({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+      iziToast.success({
         title: 'Success',
         message: 'Countdown finished!',
-        position: 'topRight'
+        position: 'topRight',
       });
-
-      document.querySelector('.timer').innerHTML = '00:00:00:00';
-
       document.getElementById('datetime-picker').disabled = false;
-      document.querySelector('[data-start]').disabled = false;
+      document.getElementById('start-btn').disabled = false;
       return;
     }
 
