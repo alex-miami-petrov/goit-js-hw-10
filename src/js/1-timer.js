@@ -174,6 +174,9 @@ const flatpickrInstance = flatpickr(datePicker, {
   defaultDate: new Date(),
   minuteIncrement: 1,
   onClose: handleDateSelection,
+  locale: {
+    firstDayOfWeek: 1,
+  },
 });
 
 startButton.addEventListener('click', () => {
@@ -183,3 +186,9 @@ startButton.addEventListener('click', () => {
 });
 
 handleDateSelection([new Date()]);
+
+// locale: {
+//   weekdays: {
+//     shorthand: ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'],
+//   },
+// },

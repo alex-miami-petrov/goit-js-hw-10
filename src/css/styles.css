@@ -122,3 +122,69 @@ button:disabled {
   color: #2e2f42;
   text-transform: uppercase;
 }
+
+span.flatpickr-weekday {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #2e2f42;
+}
+
+.dayContainer {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #666;
+}
+
+/* .flatpickr-current-month input.cur-year {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  color: #333;
+}
+
+.flatpickr-current-month .flatpickr-monthDropdown-months {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  color: #333;
+} */
+
+/* .flatpickr-time input.flatpickr-hour {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  color: #333;
+} */
+
+/* .flatpickr-time input.flatpickr-minute,
+.flatpickr-time input.flatpickr-second {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  color: #333;
+}
+
+.flatpickr-weekdays {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #2e2f42;
+}
+
+span.flatpickr-weekday {
+  color: #2e2f42;
+  font-size: unset;
+} */
