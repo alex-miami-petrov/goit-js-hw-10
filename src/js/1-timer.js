@@ -13,7 +13,11 @@ const options = {
     const selectedDate = selectedDates[0];
 
     if (selectedDate < new Date()) {
-      window.alert('Please choose a date in the future');
+      iziToast.error({
+        title: 'Error',
+        message: 'Please choose a date in the future',
+        position: 'topRight',
+      });
 
       document.querySelector('[data-start]').disabled = true;
     } else {
@@ -31,8 +35,21 @@ document.querySelector('[data-start]').addEventListener('click', function () {
   this.disabled = true;
 
   const selectedDate = flatpickr.parseDate(
-    document.getElementById('datetime-picker').value,
-    'Y-m-d H:i'
+      document.getElementById('datetime-picker').value,
+      
+      if (selectedDate < new Date()) {
+    iziToast.error({
+      title: 'Error',
+      message: 'Please choose a date in the future',
+      position: 'topRight'
+    });
+    
+          document.getElementById('datetime-picker').disabled = false;
+          document.querySelector('[data-start]').disabled = false;
+    // this.disabled = false;
+    return;
+  }
+    // 'Y-m-d H:i'
   );
 
   countdown = setInterval(() => {
@@ -40,7 +57,14 @@ document.querySelector('[data-start]').addEventListener('click', function () {
     const distance = selectedDate.getTime() - now;
 
     if (distance <= 0) {
-      clearInterval(countdown);
+        clearInterval(countdown);
+        
+        iziToast.success({
+        title: 'Success',
+        message: 'Countdown finished!',
+        position: 'topRight'
+      });
+
       document.querySelector('.timer').innerHTML = '00:00:00:00';
 
       document.getElementById('datetime-picker').disabled = false;
@@ -68,5 +92,12 @@ document.querySelector('[data-start]').addEventListener('click', function () {
 
       return { days, hours, minutes, seconds };
     }
+
+    const formattedTime = {
+      days: timeObject.days,
+      hours: addLeadingZero(timeObject.hours),
+      minutes: addLeadingZero(timeObject.minutes),
+      seconds: addLeadingZero(timeObject.seconds),
+    };
   });
 });
