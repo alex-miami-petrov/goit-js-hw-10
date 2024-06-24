@@ -42,7 +42,7 @@ document.querySelector('[data-start]').addEventListener('click', function () {
     if (distance <= 0) {
       clearInterval(countdown);
       document.querySelector('.timer').innerHTML = '00:00:00:00';
-      // Enable input and Start button when countdown stops
+
       document.getElementById('datetime-picker').disabled = false;
       document.querySelector('[data-start]').disabled = false;
       return;
