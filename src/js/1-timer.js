@@ -108,3 +108,26 @@ const options = {
 };
 
 flatpickr('#datetime-picker', options);
+
+const datePicker = document.querySelector('#datetime-picker');
+const startButton = document.querySelector('[data-start]');
+
+const daysElement = document.querySelector('[data-days]');
+const hoursElement = document.querySelector('[data-hours]');
+const minutesElement = document.querySelector('[data-minutes]');
+const secondsElement = document.querySelector('[data-seconds]');
+
+let countdownInterval;
+
+function convertMs(ms) {
+  const seconds = Math.floor((ms / 1000) % 60);
+  const minutes = Math.floor((ms / 1000 / 60) % 60);
+  const hours = Math.floor((ms / 1000 / 60 / 60) % 24);
+  const days = Math.floor(ms / 1000 / 60 / 60 / 24);
+
+  return { days, hours, minutes, seconds };
+}
+
+function addLeadingZero(value) {
+  return value.toString().padStart(2, '0');
+}
