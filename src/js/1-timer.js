@@ -102,7 +102,7 @@ const options = {
       });
       document.querySelector('[data-start]').disabled = true;
     } else {
-      // Розблокуй кнопку "Start"
+      document.querySelector('[data-start]').disabled = false;
     }
   },
 };
