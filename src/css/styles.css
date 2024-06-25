@@ -229,6 +229,31 @@ span.flatpickr-weekday {
   margin-bottom: 16px;
 }
 
+input[type='number' i] {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  margin-top: 8px;
+  padding-left: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  transition: border 3ms;
+}
+
+input[type='number' i]:hover {
+  border: 1px solid #000;
+}
+
+input[type='number' i]:focus {
+  border: 1px solid #4e75ff;
+  outline: none;
+}
+
 fieldset {
   display: flex;
   width: 360px;
