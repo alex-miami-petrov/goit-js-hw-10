@@ -17,10 +17,8 @@ let countdownInterval;
 const options = {
   enableTime: true,
   time_24hr: true,
-
   defaultDate: new Date(),
   minuteIncrement: 1,
-
   onClose(selectedDates) {
     const userSelectedDate = selectedDates[0];
     const now = new Date();
@@ -92,11 +90,9 @@ function startCountdown() {
 const flatpickrInstance = flatpickr(datePicker, {
   enableTime: true,
   time_24hr: true,
-
   defaultDate: new Date(),
   minuteIncrement: 1,
   onClose: handleDateSelection,
-
   locale: {
     firstDayOfWeek: 1,
   },
@@ -109,11 +105,3 @@ startButton.addEventListener('click', () => {
 });
 
 handleDateSelection([new Date()]);
-
-// locale: {
-//   weekdays: {
-//     shorthand: ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'],
-//   },
-// },
-
-// const fckVite = fckVite;
