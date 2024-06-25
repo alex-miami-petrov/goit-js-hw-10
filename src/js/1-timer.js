@@ -87,16 +87,16 @@ function startCountdown() {
   secondsElement.textContent = addLeadingZero(seconds);
 }
 
-const flatpickrInstance = flatpickr(datePicker, {
-  enableTime: true,
-  time_24hr: true,
-  defaultDate: new Date(),
-  minuteIncrement: 1,
-  onClose: handleDateSelection,
-  locale: {
-    firstDayOfWeek: 1,
-  },
-});
+// const flatpickrInstance = flatpickr(datePicker, {
+//   enableTime: true,
+//   time_24hr: true,
+//   defaultDate: new Date(),
+//   minuteIncrement: 1,
+//   onClose: handleDateSelection,
+//   locale: {
+//     firstDayOfWeek: 1,
+//   },
+// });
 
 startButton.addEventListener('click', () => {
   countdownInterval = setInterval(startCountdown, 1000);
@@ -104,4 +104,4 @@ startButton.addEventListener('click', () => {
   startButton.disabled = true;
 });
 
-handleDateSelection([new Date()]);
+// handleDateSelection([new Date()]);
