@@ -9,7 +9,7 @@
 @import url('./header.css');
 
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Montserrat, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -209,3 +209,108 @@ span.flatpickr-weekday {
   color: #2e2f42;
   font-size: unset;
 } */
+
+.snack-home {
+  display: flex;
+  justify-content: center;
+  padding-right: 450px;
+}
+
+.form {
+  margin-left: 156px;
+}
+
+.form-label {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+input[type='number' i] {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  margin-top: 8px;
+  padding-left: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  transition: border 3ms;
+}
+
+input[type='number' i]:hover {
+  border: 1px solid #000;
+}
+
+input[type='number' i]:focus {
+  border: 1px solid #4e75ff;
+  outline: none;
+}
+
+fieldset {
+  display: flex;
+  width: 360px;
+  height: 78px;
+  margin-bottom: 28px;
+  border: 1px solid #808080;
+  transition: border 3ms;
+}
+
+fieldset:hover {
+  border: 1px solid #000;
+}
+
+.fieldset-label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2e2f42;
+}
+
+.fieldset-label input {
+  margin-right: 8px;
+  border: 1px solid #000;
+  border-radius: 14px;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 5px;
+  margin-left: 48px;
+}
+
+.fieldset-label input:hover {
+  border: 1px solid #000;
+}
+
+.sub-btn {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 360px;
+  height: 40px;
+  background-color: #4e75ff;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  transition: background-color 3ms;
+}
+
+.sub-btn:hover {
+  background-color: #6c8cff;
+}
