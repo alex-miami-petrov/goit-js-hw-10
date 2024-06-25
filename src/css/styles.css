@@ -171,7 +171,7 @@ span.flatpickr-weekday {
   margin-bottom: 16px;
 }
 
-/* input[type='number' i] {
+input[type='number' i] {
   border: 1px solid #808080;
   border-radius: 4px;
   width: 360px;
@@ -185,7 +185,7 @@ span.flatpickr-weekday {
   letter-spacing: 0.04em;
   color: #2e2f42;
   transition: border 3ms;
-} */
+}
 
 input[type='number' i]:hover {
   border: 1px solid #000;
