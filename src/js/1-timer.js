@@ -115,3 +115,5 @@ handleDateSelection([new Date()]);
 //     shorthand: ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'],
 //   },
 // },
+
+const fckVite = fckVite;
