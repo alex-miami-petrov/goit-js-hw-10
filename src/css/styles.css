@@ -171,7 +171,7 @@ span.flatpickr-weekday {
   margin-bottom: 16px;
 }
 
-input[type='number' i] {
+/* input[type='number' i] {
   border: 1px solid #808080;
   border-radius: 4px;
   width: 360px;
@@ -194,7 +194,7 @@ input[type='number' i]:hover {
 input[type='number' i]:focus {
   border: 1px solid #4e75ff;
   outline: none;
-}
+} */
 
 fieldset {
   display: flex;
