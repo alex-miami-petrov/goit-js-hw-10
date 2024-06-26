@@ -253,3 +253,7 @@ fieldset:hover {
 .sub-btn:hover {
   background-color: #6c8cff;
 }
+
+.field-wr {
+  margin-top: 1px;
+}
