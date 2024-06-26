@@ -19,9 +19,7 @@ const options = {
   time_24hr: true,
   defaultDate: new Date(),
   minuteIncrement: 1,
-  locale: {
-    firstDayOfWeek: 1,
-  },
+
   onClose(selectedDates) {
     const userSelectedDate = selectedDates[0];
     const now = new Date();
